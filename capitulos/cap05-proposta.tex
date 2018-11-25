@@ -30,12 +30,12 @@ Para tal, é necessário um algoritmo robusto, capaz de interpretar os dados dos
 O algoritmo deve, de forma constante, medir a distância entre o seu ponto de destino e sua posição atual, ao mesmo tempo em que verifica sua atual direção e compara com a direção do ponto de destino. Em paralelo a isso, os sensores de distância devem ser lidos ininterruptamente em busca de possíveis obstáculos, evitando possíveis colisões. 
 \begin{figure}[H]
     \begin{center}
-    % jacto
+    
         \subfigure[]{
             \label{fig:distância:alvo}
             \includegraphics[width=0.4\textwidth]{figuras/ManicaDeEstados.png}
         }
-        % new holland
+        
         \subfigure[]{
             \label{fig:obstaculos}
             \includegraphics[width=0.4\textwidth]{figuras/obstaculos.png}
@@ -74,7 +74,7 @@ O veículo possuirá, inicialmente, 3 sensores ultrassônicos dispostos na frent
 O módulo GPS a ser usado será o GSM GPRS SIM808 em forma de\textit{ shield} que será acoplado diretamente ao Arduino, ilustrado na figura \ref{fig:gps:vaa}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{figuras/arduinoGPS_bb.png}
+    \includegraphics[width=0.3\textwidth]{figuras/arduinoGPS_bb.png}
     \caption{Shield GPS acoplado a um Arduino UNO R3}
     \label{fig:gps:vaa}
 \end{figure}
