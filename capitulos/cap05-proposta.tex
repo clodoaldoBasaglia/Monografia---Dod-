@@ -66,7 +66,7 @@ O veículo apresentado na figura \ref{fig:sketchup:vaa} sofrerá revisões ao lo
 O veículo possuirá, inicialmente, 3 sensores ultrassônicos dispostos na frente do mesmo, afim de captar possíveis obstáculos em sua rota, fazendo com o veiculo seja capaz de realizar manobras para evitar colisões e manter-se em distância segura das plantas do campo. Na figura \ref{fig:ultrasonico:vaa} podemos observar o esquemático gerado no Fritzing\footnote{http://fritzing.org/home/} representando um Arduino UNO R3 e 3 sensores ultrassônicos HCSR05.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{figuras/ultrassonico_bb.png}
+    \includegraphics[width=0.5\textwidth]{figuras/ULTRASSONICO.png}
     \caption{Esquemático dos sensores ultrassônicos gerado no Fritzing utilizando componentes disponíveis}
     \label{fig:ultrasonico:vaa}
 \end{figure}
@@ -74,26 +74,30 @@ O veículo possuirá, inicialmente, 3 sensores ultrassônicos dispostos na frent
 O módulo GPS a ser usado será o GSM GPRS SIM808 em forma de\textit{ shield} que será acoplado diretamente ao Arduino, ilustrado na figura \ref{fig:gps:vaa}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.3\textwidth]{figuras/arduinoGPS_bb.png}
+    \includegraphics[width=0.3\textwidth]{figuras/ARDUINOGPS.png}
     \caption{Shield GPS acoplado a um Arduino UNO R3}
     \label{fig:gps:vaa}
 \end{figure}
 
+Com a utilização do módulo GPS em conjunção com os dados de um mapa georreferenciado, fica possível calcular posições e distancias em relação das posições a serem alcançadas. O GPS é uma peça de extrema importância nesse sistema, já que proverá informações importantes para que o sistema consiga, com certa precisão, atingir os objetivos.
 
-/***DESCREVER***/
-
+O módulo NRF24L01 tem potencia de 2.4Ghz e um alcance de 1000 metros em campo aberto. Com taxa de transmissão de até 2mb/s\footnote{megabit por segundo}. Combinado com o pequeno consumo energético e o tamanho, torna-se ideal para o projeto, representado na figura \ref{fig:fritz:radio}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{figuras/radio_bb.png}
-    \caption{Esquema do chassi}
-    \label{fig:sketchup:vaa}
+    \includegraphics[width=0.5\textwidth]{figuras/RADIO.png}
+    \caption{Esquemático feito no Fritzing da ligação o módulo NRF24L01}
+    \label{fig:fritz:radio}
 \end{figure}
 
+Serão utilizados dois desses módulos no projeto: um no próprio veículo e outro em um Arduino conectado a um computador, responsável por transmitir dados sobre as coordenadas.
+
+Serão utilizados dois motores elétricos com a finalidade de dar propulsão e direção ao veiculo. Os dois serão controlados através de Arduinos e pontes H L9110.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{figuras/motor_bb.png}
+    \includegraphics[width=0.5\textwidth]{figuras/MOTORBB.png}
     \caption{Esquema do chassi}
-    \label{fig:sketchup:vaa}
+    \label{fig:fritz:motor}
 \end{figure}
 
 A fim de operar esse veículo durante horas, será necessário criar um sistema fotovoltaico capaz de alimentar os componentes, bem como armazenar energia em baterias para que o mesmo continue operando mesmo em condições de baixa luminosidade ou até mesmo durante a noite. Para tal, devemos obter as especificações quanto ao consumo elétrico de cada componente, a fim de calcular qual o gasto, a autonomia do sistema, bem como os demais componentes a serem utilizados.
@@ -181,3 +185,13 @@ Finalmente, calcula-se o numero de baterias a serem utilizadas pelo sistema, tan
 \[NB=0,699\]
 Como o resultado mostra, uma bateria será o suficiente para todo o sistema, e segundo os cálculos, com sobra.
 
+Para se ter um controle situacional em tempo real, fica claro a necessidade de um \textit{software} a ser utilizado pelo operador do veículo a fim de observar seu progresso e informações provenientes de seus sensores e seu posicionamento no campo. A tela deve ser simples e intuitiva, dando enfase ao mapa da área e tornando-se fácil para que novas tarefas e coordenadas sejam inseridas e enviadas para o veículo.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/esboço.png}
+    \caption{Esboço da interface construído no Balsamiq Mockups 3}
+    \label{fig:balsamiq:esboco}
+\end{figure}
+
+Informações sobre a direção e a posição do veículo serão atualizadas na tela, bem como uma visualização do mapa carregado para que possa ser traçadas as áreas de ação  ou caminhos a serem seguidos em momentos de manutenção ou reabastecimento. Um botão de parada emergencial é presente, sendo necessário caso algum dos parâmetros ou até mesmo o comportamento o veículo seja avaliado como impróprio. Uma caixa de seleção se faz presente com o intuito de dar a opção do tipo de tarefa a ser realizado pelo veículo, seja pulverização, plantagem ou apenas translados entre pontos. 
