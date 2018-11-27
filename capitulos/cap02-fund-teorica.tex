@@ -1,7 +1,7 @@
 \chapter{Fundamentação Teórica}
 \label{cap:funcamentacao:teorica}
 \section{Energia fotovoltaica}
-O efeito fotovoltaico, observado por Edmond Bequerel em 1939, consiste no aparecimento de uma diferença de potencial nos extremos de um semicondutor, quando esse absorve  a luz.\cite{} São várias as vantagens da energia solar fotovoltaica:
+O efeito fotovoltaico, observado por Edmond Becquerel em 1839, consiste no aparecimento de uma diferença de potencial nos extremos de um semicondutor, quando esse absorve  a luz.\cite{} São várias as vantagens da energia solar fotovoltaica:
 \begin{itemize}
 \item a matéria prima é inesgotável
 \item não há emissão de poluentes durante a geração da eletricidade
@@ -52,9 +52,9 @@ Em posse as características do sistema fotovoltaico idealizado e com os cálcul
 
 \section{Computação Autônoma}
 
-Como sistemas tem se tornado cada vez mais interconectados e diversos, arquitetos estão cada vez menos capazes de antecipar e construir as interações entre os componentes, deixando esses problemas para serem resolvidos em tempo real. Logo, os sistemas ficaram gigantescos e muito complexos até mesmo para o mais qualificado dos integradores de sistema para instalar, configurar, otimizar, manutenir e conectar. A única opção restante é computação autônoma: sistemas que conseguem gerenciar a si mesmos dados certos objetivos.\cite{Kephart2003}
+Como sistemas tem se tornado cada vez mais interconectados e diversos, arquitetos estão cada vez menos capazes de antecipar e construir as interações entre os componentes, deixando esses problemas para serem resolvidos em tempo real. Logo, os sistemas ficaram gigantescos e muito complexos até mesmo para o mais qualificado dos integradores de sistema para instalar, configurar, otimizar, manutenir e conectar. A única opção restante é computação autônoma: sistemas que conseguem gerenciar a si mesmos dados certos objetivos\cite{Kephart2003}.
 
-Um dos pilares essenciais de um sistema autônomo é a capacidade sensorial do mesmo, onde o habilita a observar o contexto externo. É também de suma importância que o sistema tenha propósito e \textit{Know-how} para continuar operando sem ajuda externa, operação essa que é ditada pela lógica embutida responsável pelas tomadas de decisão para que o proposito e seus objetivos sejam alcançados, baseando-se também, no poder de interpretação dos dados provenientes dos sensores. Como é observado na figura \ref{fig:modelo-conceitual}, o sistema deve ser capaz de produzir saídas, dado as entradas(objetivos, dados) e as informações provenientes dos sensores, tomando as corretas decisões e adaptando-se as mudanças de contexto.
+Um dos pilares essenciais de um sistema autônomo é a capacidade sensorial do mesmo, onde o habilita a observar o contexto externo. É também de suma importância que o sistema tenha propósito e \textit{know-how} para continuar operando sem ajuda externa, operação essa que é ditada pela lógica embutida responsável pelas tomadas de decisão para que o propósito e seus objetivos sejam alcançados, baseando-se também, no poder de interpretação dos dados provenientes dos sensores. Como é observado na Figura \ref{fig:modelo-conceitual}, o sistema deve ser capaz de produzir saídas, dado as entradas(objetivos, dados) e as informações provenientes dos sensores, tomando as corretas decisões e adaptando-se as mudanças de contexto.
 
 \begin{figure}[H]
     \centering
@@ -64,14 +64,14 @@ Um dos pilares essenciais de um sistema autônomo é a capacidade sensorial do m
 \end{figure}
 
 
-A essência de um sistema autônomo é o auto-gerenciamento, sendo este capaz de ajustar sua operação para comportar as mudanças de cargas de trabalho, demandas e condições externas, além de possíveis falhas de hardware ou software. O sistema deve ser capaz de compilar informações sobre uso de hardware, desempenho dos softwares e componentes a fim de ajudar em decisões futuras, sendo esses também, capazes de automaticamente reverter essas decisões se julgar que o resultado não mantenha ou melhore os padrões de disponibilidade do mesmo.
+A essência de um sistema autônomo é o auto-gerenciamento, sendo este capaz de ajustar sua operação para comportar as mudanças de cargas de trabalho, demandas e condições externas, além de possíveis falhas de \textit{hardware} ou \textit{software}. O sistema deve ser capaz de compilar informações sobre uso de \textit{hardware}, desempenho dos \textit{softwares} e componentes a fim de ajudar em decisões futuras, sendo esses também, capazes de automaticamente reverter essas decisões se julgar que o resultado não mantenha ou melhore os padrões de disponibilidade do mesmo.
 
 Sistemas autônomos são capazes de configurar-se automaticamente de acordo com as prioridades de alto nível que especificam o que é desejado do sistema. Ao incorporar novos componentes ao sistema, o mesmo deve se adaptar a adição, reconfigurando os demais componentes para que todos continuem a funcionar em sinergia. Além disso, esses sistemas devem, de forma continua, procurar modos de otimizar sua operação, buscando a melhor combinação de parâmetros e buscando a continua atualização dos componentes, isso, devido a grandiosa complexidade desses sistemas demandarem horas de trabalho de um especialista para que sejam otimizados.
 
-A tarefa de encontrar um \textit{bug}, descobrir suas causas e, por fim, construir uma solução pode consumir inúmeras horas de trabalho de uma equipe de programadores. Um sistema autônomo deve detectar, diagnosticar e resolver certos problemas que encontrar ou, se necessário, notificar os administradores do problema. O sistema é capaz de realizar tal tarefa, dado o conhecimento do próprio funcionamento e da performance que pode alcançar. Além disso, o sistema pode se proteger de ataques que possam acarretar perdas de performance e de disponibilidade, bem como utilizar seus sensores para verificar passiveis problemas e tomar decisões de como evita-los.
+A tarefa de encontrar um erro(\textit{bug}), descobrir suas causas e, por fim, construir uma solução pode consumir inúmeras horas de trabalho de uma equipe de programadores. Um sistema autônomo deve detectar, diagnosticar e resolver certos problemas que encontrar ou, se necessário, notificar os administradores do problema. O sistema é capaz de realizar tal tarefa, dado o conhecimento do próprio funcionamento e da performance que pode alcançar. Além disso, o sistema pode se proteger de ataques que possam acarretar perdas de performance e de disponibilidade, bem como utilizar seus sensores para verificar possíveis problemas e tomar decisões de como evita-los.
 
 \section{Arduino}
-Arduino é uma plataforma eletrônica de código aberto,  concebida para ser fácil de usar, tanto em termos de hardware, como de software. Por essa natureza, Arduino é indicado para hobbistas, estudantes e professores, pois além de simples, é de baixo custo, multiplataforma e possui uma gama enorme de software e hardware open-sorce.\cite{Mohammed2017}
+Arduino é uma plataforma eletrônica de código aberto,  concebida para ser fácil de usar, tanto em termos de \textit{hardware}, como de \textit{software}. Por essa natureza, Arduino é indicado para \textit{hobbistas}\footnote{Segundo Corte Certo: Largamente em uso, vem do inglês hobbyist, nome que se dá a uma pessoa dedicada a um hobby.}, estudantes e professores, pois além de simples, é de baixo custo, multiplataforma e possui uma gama enorme de \textit{software} e \textit{hardware open-sorce}\cite{Mohammed2017}.
 
 \begin{figure}[H]
     \centering
@@ -80,14 +80,14 @@ Arduino é uma plataforma eletrônica de código aberto,  concebida para ser fá
     \label{fig:arduino-uno}
 \end{figure}
 
-A família Arduino é baseada no micro controlador ATmega32 de 8-bits, com clock de 16mhz, várias entradas digitais e analógicas para IO, comunicação serial, USB e ICSP. Para sua operação, Arduino requer uma voltagem de 7 a 12V. Possui 35kb de memória, sendo essas: 32kb de memória flash, onde os programas são carregados, 2kb de SRAM(static random access memory) para manipulação de variáveis e \textit{erasable read only memory}(EEP-ROM) de 1kb  onde ficam os dados que devem ser persistidos. No site oficial do Arduino\footnote{https://www.arduino.cc/} encontra-se disponível também a IDE(Integrated Development Environment) oficial, onde é possível editar e compilar códigos, bem como comunicar-se com a placa.
+A família Arduino é baseada no micro controlador ATmega32 de 8-bits, com \textit{clock} de 16mhz, várias entradas digitais e analógicas para IO, comunicação serial, USB e ICSP. Para sua operação, Arduino requer uma voltagem de 7 a 12V. Possui 35kb de memória, sendo essas: 32kb de memória \textit{flash}, onde os programas são carregados, 2kb de SRAM(\textit{static random access memory}) para manipulação de variáveis e \textit{erasable read only memory}(EEP-ROM) de 1kb  onde ficam os dados que devem ser persistidos. No site oficial do Arduino\footnote{https://www.arduino.cc/} encontra-se disponível também a IDE(\textit{Integrated Development Environment}) oficial, onde é possível editar e compilar códigos, bem como comunicar-se com a placa.
 
-Um Arduino pode ser conectado a vários tipos de \textit{shields} para inúmeras aplicações, desde o controle de motores, módulos GPS, Wifi e Bluetooth. Por toda essa capacidade, Arduino vem crescendo dentro das indústrias também, onde um estudo feito por UBM\footnote{http://bd.eduweb.hhs.nl/es/2014-embedded-market-study-then-now-whats-next.pdf} em 2014, mostrou que 19\% dos profissionais questionados consideravam a utilização do Arduino nos próximos projetos.
+Um Arduino pode ser conectado a vários tipos de \textit{shields}\footnote{São placas de circuito que podem ser conectadas ao Arduino, encaixando-se perfeitamente por cima dele} para inúmeras aplicações, desde o controle de motores, módulos GPS, \textit{Wifi} e \textit{Bluetooth}. Por toda essa capacidade, Arduino vem crescendo dentro das indústrias também, onde um estudo feito por UBM\footnote{http://bd.eduweb.hhs.nl/es/2014-embedded-market-study-then-now-whats-next.pdf} em 2014, mostrou que 19\% dos profissionais questionados consideravam a utilização do Arduino nos próximos projetos.
 \section{Raspberry PI}
 
-Segundo o site do fabricante\footnote{https://www.raspberrypi.org/help/what-\%20is-a-raspberry-pi/} , Raspberry Pi é um computador de baixo custo, pequeno tamanho que pode ser conectado diretamente a um monitor ou aparelho de televisão. É capaz de rodar um sistema operacional, comumente o Raspbian, uma versão famoso sistema operacional Debian, criada especificamente para o Raspberry Pi. Apesar do pequeno tamanho, é possível executar tarefas de um computador normal, tais como programar, navegar na internet, assistir filmes em alta resolução, etc. 
+Segundo o site do fabricante\footnote{https://www.raspberrypi.org/help/what-\%20is-a-raspberry-pi/} , Raspberry Pi é um computador de baixo custo, pequeno tamanho que pode ser conectado diretamente a um monitor ou aparelho de televisão. É capaz de rodar um sistema operacional, comumente o Raspbian, uma versão famoso sistema operacional Debian, criada especificamente para o Raspberry Pi. Apesar do pequeno tamanho, é possível executar tarefas de um computador normal, tais como programar, navegar na internet, assistir filmes em alta resolução, entre outros. 
 
-A placa apresenta, na sua versão 2, um processador quad-core de 900mhz  Broadcom BCM2836 quad core Cortex A7, 1 GB de memória RAM, portas USB, Ethernet, cartão MicroSD, saía de áudio e HDM. Dadas essas características, essa versão é mais indicada a projetos que necessitem de mais processamento, muitas vezes usada como "cérebro" em projetos de Internet das Coisas.
+A placa apresenta, na sua versão 2, um processador \textit{quad-core} de 900mhz  \textit{Broadcom} BCM2836 quad core Cortex A7, 1 GB de memória RAM, portas USB, Ethernet, cartão MicroSD, saía de áudio e HDM. Dadas essas características, essa versão é mais indicada a projetos que necessitem de mais processamento, muitas vezes usada como "cérebro" em projetos de Internet das Coisas.
 
 \begin{figure}[H]
     \centering
@@ -97,7 +97,7 @@ A placa apresenta, na sua versão 2, um processador quad-core de 900mhz  Broadco
 \end{figure}
 
 \section{Mapas georreferenciados}
-Para \cite{Meng2014}, georreferenciamento é "alinhar dados geográficos com um sistema de coordenadas conhecidos para que possa ser pesquisado, visualizado e analisado com outros dados geográficos". O processo de identificar um objeto geográfico e relaciona-lo a uma locação geográfica é chamado de \textit{matching}\footnote{casar,igualar, combinar}. Georreferenciamento  normalmente usa um sistema de referencia chamado \textit{WGS-84}, que constrói coordenadas padronizadas para a terra, em adição, alguns dispositivos de navegação são utilizados para coletar dados e atrela-los ao processo de construção do mapa. A combinação de dados provenientes de GPS em combinação com \textit{WGS-84}, podem referenciar a um certo ponto geográfico no mapa \ref{fig:mapa:georef}. Esse tipo de mapa pode combinar dados e imagens capturados por satélite, aeronaves ou veículos aéreos não tripulados. 
+Para \cite{Meng2014}, georreferenciamento é "alinhar dados geográficos com um sistema de coordenadas conhecidos para que possa ser pesquisado, visualizado e analisado com outros dados geográficos". O processo de identificar um objeto geográfico e relaciona-lo a uma locação geográfica é chamado de \textit{matching}\footnote{casar,igualar, combinar}. Georreferenciamento  normalmente usa um sistema de referencia chamado \textit{WGS-84}, que constrói coordenadas padronizadas para a terra, em adição, alguns dispositivos de navegação são utilizados para coletar dados e atrelá-los ao processo de construção do mapa. A combinação de dados provenientes de GPS em combinação com \textit{WGS-84}, podem referenciar a um certo ponto geográfico no mapa \ref{fig:mapa:georef}. Esse tipo de mapa pode combinar dados e imagens capturados por satélite, aeronaves ou veículos aéreos não tripulados. 
 
 \begin{figure}[H]
     \centering
@@ -105,3 +105,16 @@ Para \cite{Meng2014}, georreferenciamento é "alinhar dados geográficos com um 
     \caption{Mapa georreferenciado combinando dados de um GPS acoplado a um carro}
     \label{fig:mapa:georef}
 \end{figure}
+
+\section{Baterias}
+
+%https://batteryuniversity.com/learn/archive/whats_the_best_battery
+
+Uma bateria é um dispositivo com uma ou mais células eletroquímicas com conectores externos que conseguem prover eletricidade a outros dispositivos, tais como carros, computadores portáteis, celulares, entre outros. Alessandro Volta foi o primeiro a descrever uma bateria nos anos de 1800, onde através de uma pilha de zinco e cobre, separados por papeis enxercados com água salgada, produziu uma corrente estável por um considerável tempo. Atualmente existem inúmeros tipos de baterias, variando de tamanho, potência e composição, variando também pelo seu tempo de vida, capacidade de descarga e preço\cite{Buchmann2017}. Dentre as quais podemos citar:
+\begin{itemize}
+    \item \textbf{Níquel-cádmio(NiCd):} Um tipo já maduro na indústria, com pouca densidade energética, a bateria feita com NiCD é utilizada onde durabilidade, alta taxa de descarga e preço são importantes. Utilizadas em rádios, equipamentos biomédicos, câmeras de vídeo. Contudo, são tóxicas e nada amigáveis ao meio ambiente.
+    \item \textbf{Hidreto de metal níquel(NiMH):} comparada com as baterias de NiCd, as de NiMH possuem maior densidade energética, mas com ciclo de vida menor. Contem metais tóxicos e são utilizadas em computadores e celulares.
+    \item \textbf{Chumbo-ácido:} São as mais econômicas para utilização em grandes aplicações, onde o peso não é problema. São as mais utilizadas em equipamento hospitalar, cadeiras de roda e iluminação de emergência.
+    \item \textbf{Íon de lítio(Li‑ion):} Vem crescendo em uso recentemente, já que podem ser utilizadas em aplicações onde peso e grande densidade enérgica são necessárias, na contramão, a tecnologia é frágil e precisa de proteção dos seus circuitos. Normalmente utilizadas em celulares e \textit{notebooks}.
+    \item \textbf{Polímero de íon de lítio(Polímero Li‑ion): } São parecidas com as de Li-ion, mas mais finas e simplificadas, comumente usadas em telefones celulares.
+\end{itemize}
